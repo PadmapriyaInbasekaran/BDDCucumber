@@ -50,7 +50,7 @@ public class loginStepDefinition {
         String amazonUrl = driver.getCurrentUrl();
         // Assert.assertEquals(amazonUrl,"https://www.amazon.com");
         driver.manage().window().maximize();
-        Thread.sleep(20000);
+        Thread.sleep(2000);
     }
 
     @When("^: Enter (.*), (.*) and click login$")
@@ -99,7 +99,7 @@ public class loginStepDefinition {
 
     @When("^: Enter required mobile name in the searchbar$")
     public void enter_required_mobile_name_in_the_searchbar() {
-        searchBar.sendKeys("bags");
+        searchBar.sendKeys("redmi");
     }
 
     @Then("^: Results page should be displayed$")
@@ -153,7 +153,7 @@ public class loginStepDefinition {
 
     @And("^: click continue$")
     public void _click_continue() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath(locationPath.getProperty("continuebutton_xpath"))).click();
     }
 

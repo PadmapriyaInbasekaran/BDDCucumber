@@ -25,7 +25,7 @@ Feature: Verify Login page
     And : click on search
     Then : Results page should be displayed
 
-  Scenario Outline: Select redmi mobile and add to cart
+  Scenario Outline: Add selected product to cart
     Given : click on link
     And : click on deliver to India
     And : Enter <US Zipcode> in the textBox
